@@ -36,12 +36,12 @@ def cifar10(args, dataset_args):
 
     return get_datasets(name='CIFAR10', train_augment=train_augment, test_augment=test_augment, args=args)
 
-def mnist(args):
+def mnist(args, dataset_args):
     train_augment, test_augment = None, None
 
     return get_datasets(name='MNIST', train_augment=train_augment, test_augment=test_augment, args=args)
 
-def fmnist(args):
+def fmnist(args, dataset_args):
     train_augment, test_augment = None, None
 
     return get_datasets(name='FashionMNIST', train_augment=train_augment, test_augment=test_augment, args=args)
